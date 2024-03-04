@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu imóvel</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <div class="container">
+        <div class="header">
+            <h2>Cadastre seu imóvel para vender mais rápido!</h2> 
+        </div>
+        <div class="form-container">
+            <div class="form-header"> 
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu imóvel</h1>
+                <p>
+                    Descreva abaixo as informações e marque as opcionais sobre seu imóvel:
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título de anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" 
+                        placeholder="Título para anunciar seu imóvel"
+                        minlength="1" 
+                        maxlength="30" 
+                        required/>
+                    </div>
+                    <div class="box-input">
+                        <label for="title">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" 
+                        placeholder="Defina o preço "
+                        required/>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field"></span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você descreve os detalhes do imóvel, por exemplo: Se tem alguma irregularidade."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="construction-company">Construtora <span class="required-field">*</span></label>
+                        <input type="text" name="construction-company" id="construction-company" class="block" placeholder="Diga o nome da construtora." required>
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Data de compra <span class="required-field">*</span></label
+                        >
+                        <input 
+                        type="date" 
+                        name="purchase_date" 
+                        id="purchase_date" 
+                        class="block" 
+                        required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <p>Tipo de imóvel:<span class="required-field">*</span></p>
+                        <input type="radio" id="apartament" name="immobile">
+                        <label for="apartament">Apartamento</label>
+                        <input type="radio" id="house" name="immobile">
+                        <label for="house">Casa</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="brick_house" value="brick_house">
+                                <label for="brick_house">Casa de alvenaria</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="wood_house" value="wood_house">
+                                <label for="wood_house">Casa de madeira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="popular_house" value="popular_house">
+                                <label for="popular_house">Casa popular</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="high_standart" value="high_standart">
+                                <label for="high_standart">Casa de alto padrão</label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="kitnet" value="kitnet">
+                                <label for="kitnet">Apartamento Kitnet</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="flat" value="flat">
+                                <label for="flat">Apartamento Flat</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="roof" value="roof">
+                                <label for="roof">Apartamento cobertura</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="duplex" value="duplex">
+                                <label for="duplex">Apartamento duplex</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Optional[]" id="triplex" value="triplex">
+                                <label for="triplex">Apartamento triplex</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do imóvel <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/img, image/jpg" id="images" name="images" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
